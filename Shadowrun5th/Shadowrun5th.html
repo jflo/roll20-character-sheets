@@ -38,6 +38,9 @@
     </div>
     
 
+.sheet-matrixnotesblock{
+    height:10em;
+}
 
     <div class="content1">
         <div class="statblock">
@@ -7201,6 +7204,10 @@ make sure to enter what the spell is resisted with">
                 <div class="deckinputwrapper">
                     <button type="roll" class="deckroll" name="roll_deckantispott" title="Click to Roll against Matrix Perception" value="@{gmroll}&{template:shadowrun}{{name=@{character_name}}}{{roll_name=to stay hidden}}{{val1=Sleaze}}{{val1_num=[[@{sleaze_total}]]}}{{val2=Logic}}{{val2_num=[[@{log_total}]]}}{{mod_num=[[?{Situational Modifiers|0}]]}}{{edge=@{edgeroll}}}{{edge_num=[[@{edg_total}]]}}{{result=[[(@{sleaze_total}+@{log_total}+?{Situational Modifiers|0}+[[@{edgn}*@{edg_total}]])@{standardroll}@{edgeroll}]]}}" />
                 </div>
+                <div class="matrixnotesblock">
+                    <h2>Deck Notes</h2>
+                    <textarea name="attr_deckgeneralnotes"></textarea>
+                </div>
             </div>
         </div>
         <div class="cyberprograms">
@@ -12691,8 +12698,3 @@ on("change:repeating_knowledge:knowledgeattr", function() {
         {{/description}}
     </table>
 </rolltemplate>
-
-
-
-
-

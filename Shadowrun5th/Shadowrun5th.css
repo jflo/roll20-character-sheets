@@ -874,6 +874,7 @@ input.sheet-technomancycheckbox:checked ~ div.sheet-technomancer{
 .sheet-contacts input[type=text],
 .sheet-contacts textarea,
 .sheet-notesblock textarea,
+.sheet-matrixnotesblock textarea,
 .sheet-defense input,
 .sheet-initiative input,
 .sheet-limits input,
@@ -1504,6 +1505,9 @@ input[disabled="true"]{
     height:25em;
 }
 
+.sheet-matrixnotesblock{
+    height:10em;
+}
 
 .sheet-skillspacer{
     width:95%;
@@ -1514,6 +1518,7 @@ input[disabled="true"]{
 
 .sheet-charinfo textarea,
 .sheet-notesblock textarea,
+.sheet-matrixnotesblock textarea,
 .sheet-vehiclenoteswrapper textarea,
 .sheet-qualitynoteswrapper textarea,
 .sheet-spiritenoteswrapper textarea,
@@ -1655,7 +1660,3 @@ input.sheet-weaponcheckbox:checked ~ div.sheet-weaponnoteswrapper{
     border:none !important;
     background-color:inherit;
 }
-
-
-
-
